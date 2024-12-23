@@ -1,0 +1,25 @@
+<p-card header="{{ album.artist }}" subheader="{{ album.title }}">
+  <ng-template pTemplate="header" class="flex">
+    <div class="flex justify-center">
+      <img [src]="album.image" class="w-52 h-52 p-2" />
+    </div>
+  </ng-template>
+  <div class="grid grid-cols-2">
+    <div class="flex justify-start">
+      <span>{{ album.year }}</span>
+    </div>
+    <div class="flex justify-end">
+      <span class="font-bold">${{ album.price.toFixed(2) }} USD</span>
+    </div>
+  </div>
+  <ng-template pTemplate="footer">
+    <div class="grid grid-cols-2 gap-4">
+      <div class="flex justify-start">
+        <p-button label="View Details" />
+      </div>
+      <div class="flex justify-end">
+        <p-button label="Add to Cart" (click)="addToCart(album)" />
+      </div>
+    </div>
+  </ng-template>
+</p-card>

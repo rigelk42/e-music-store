@@ -1,0 +1,123 @@
+{
+  "albums": [
+    {
+      "title": "Off the Wall",
+      "artist": "Michael Jackson",
+      "year": "1979",
+      "image":"off-the-wall.jpg",
+      "genres": [
+        "disco",
+        "funk",
+        "pop",
+        "R&B"
+      ],
+      "price": 14.98
+    },
+    {
+      "title": "That's the Way of the World",
+      "artist": "Earth Wind & Fire",
+      "year": "1975",
+      "image":"thats-the-way-of-the-world.jpg",
+      "genres": [
+        "soul",
+        "funk",
+        "progressive funk",
+        "pop"
+      ],
+      "price": 23.99
+    },
+    {
+      "title": "Spirit of the Boogie",
+      "artist": "Kool & The Gang",
+      "year": "1975",
+      "image":"spirit-of-the-boogie.jpg",
+      "genres": [
+        "funk",
+        "R&B",
+        "soul"
+      ],
+      "price": 65.81
+    },
+    {
+      "title": "Stone Gon'",
+      "artist": "Barry White",
+      "year": "1973",
+      "image":"stone-gon.jpg",
+      "genres": [
+        "disco",
+        "R&B",
+        "soul"
+      ],
+      "price": 125.00
+    },
+    {
+      "title": "Saturday Night Fever",
+      "artist": "Bee Gees",
+      "year": "1977",
+      "image":"saturday-night-fever.jpg",
+      "genres": [
+        "disco"
+      ],
+      "price": 52.99
+    },
+    {
+      "title": "Parallel Lines",
+      "artist": "Blondie",
+      "year": "1978",
+      "image":"parallel-lines.jpg",
+      "genres": [
+        "new wave",
+        "pop rock"
+      ],
+      "price": 33.21
+    },
+    {
+      "title": "Synchronicity",
+      "artist": "The Police",
+      "year": "1983",
+      "image":"synchronicity.jpg",
+      "genres": [
+        "new wave",
+        "pop",
+        "post-punk"
+      ],
+      "price": 24.93
+    },
+    {
+      "title": "Hunting High & Low",
+      "artist": "a-ha",
+      "year": "1985",
+      "image":"hunting-high-and-low.jpg",
+      "genres": [
+        "new wave",
+        "synth pop"
+      ],
+      "price": 57.18
+    },
+    {
+      "title": "The Cars",
+      "artist": "The Cars",
+      "year": "1978",
+      "image":"the-cars.jpg",
+      "genres": [
+        "new wave",
+        "synth rock",
+        "power pop"
+      ],
+      "price": 15.95
+    },
+    {
+      "title": "Dazzle Ships",
+      "artist": "OMD",
+      "year": "1983",
+      "image":"dazzle-ships.jpg",
+      "genres": [
+        "electronic",
+        "musique concrete",
+        "experimental",
+        "avant pop"
+      ],
+      "price": 53.63
+    }
+  ]
+}

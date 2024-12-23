@@ -1,0 +1,11 @@
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <span class="px-2 pl-2 pr-8">E-Store</span>
+  </ng-template>
+  <ng-template pTemplate="item" let-item let-root="root">
+    <a pRipple class="flex items-center justify-center p-2">
+      <span [class]="item.icon"></span>
+      <span class="ml-2">{{ item.label }}</span>
+    </a>
+  </ng-template>
+</p-menubar>

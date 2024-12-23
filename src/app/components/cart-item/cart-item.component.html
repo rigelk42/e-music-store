@@ -1,0 +1,24 @@
+<div class="grid grid-flow-row gap-4 mb-2">
+  <div class="grid grid-cols-12 border border-2">
+    <div class="grid col-span-3">
+      <img [src]="cartItem.album.image" />
+    </div>
+    <div class="grid col-span-9">
+      <div class="grid grid-flow-row">
+        <div class="grid grid-cols-12">
+          <div class="grid col-span-11 p-2 font-bold">{{ cartItem.album.title }}</div>
+          <div class="grid-col-span-1 justify-self-center pt-1">
+            <i class="pi pi-times-circle cursor-pointer" (click)="removeItem(cartItem)"></i>
+          </div>
+        </div>
+        <div class="grid grid-cols-12">
+          <div class="grid col-span-12 px-2">{{ cartItem.album.artist }}</div>
+        </div>
+        <div class="grid grid-cols-12">
+          <div class="grid col-span-9 px-2">{{ cartItem.quantity }} X ${{ cartItem.album.price }}</div>
+          <div class="grid col-span-3 px-2 text-end">${{ cartItem.totalPrice.toFixed(2) }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="border border-2 h-full w-full p-2">
+  <p-panel header="My Cart"></p-panel>
+  @for (album of cartItems; track $index) {
+    <app-cart-item [cartItem]="album"></app-cart-item>
+  }
+  <hr />
+  <div class="grid grid-flow-row pt-2" [ngClass]="{'hidden': cartItems.length === 0, 'grid': cartItems.length > 0}">
+    <div class="grid grid-cols-12">
+      <div class="grid col-span-8 px-2">Subtotal</div>
+      <div class="grid col-span-4 px-2 text-end">${{ cartSubTotal }}</div>
+    </div>
+    <div class="grid grid-cols-12">
+      <div class="grid col-span-8 px-2">Tax ({{ cartTaxRate }}%)</div>
+      <div class="grid col-span-4 px-2 text-end">${{ cartTaxes }}</div>
+    </div>
+    <div>
+      <div class="grid grid-cols-12">
+        <div class="grid col-span-8 px-2">Total Due</div>
+        <div class="grid col-span-4 px-2 text-end font-bold">${{ cartTotal }}</div>
+      </div>
+    </div>
+  </div>
+</div>
